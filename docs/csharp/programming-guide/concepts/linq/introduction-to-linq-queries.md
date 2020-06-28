@@ -37,7 +37,7 @@ Uma *consulta* é uma expressão que recupera dados de uma fonte de dados. As co
 ## <a name="the-data-source"></a>A Fonte de Dados  
  No exemplo anterior, como a fonte de dados é uma matriz, ela dá suporte à interface genérica <xref:System.Collections.Generic.IEnumerable%601> de forma implícita. Este fato significa que ele pode ser consultado com LINQ. Uma consulta é executada em uma instrução `foreach`, e `foreach` requer <xref:System.Collections.IEnumerable> ou <xref:System.Collections.Generic.IEnumerable%601>. Tipos que dão suporte a <xref:System.Collections.Generic.IEnumerable%601> ou uma interface derivada, como a genérica <xref:System.Linq.IQueryable%601>, são chamados *tipos passíveis de consulta*.  
   
- Um tipo quepode ser consultado não requer nenhuma modificação ou tratamento especial para servir como fonte de dados LINQ. Se os dados de origem ainda não estão na memória como um tipo querificável, o provedor LINQ deve representá-los como tal. Por exemplo, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] carrega um documento XML em um tipo <xref:System.Xml.Linq.XElement> passível de consulta:  
+ Um tipo que pode ser consultado não requer nenhuma modificação ou tratamento especial para servir como fonte de dados LINQ. Se os dados de origem ainda não estão na memória como um tipo querificável, o provedor LINQ deve representá-los como tal. Por exemplo, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] carrega um documento XML em um tipo <xref:System.Xml.Linq.XElement> passível de consulta:  
   
  [!code-csharp[CsLINQGettingStarted#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#2)]  
   
